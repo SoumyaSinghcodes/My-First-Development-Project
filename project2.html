@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project for SheCodes</title>
+
+    <style>
+      body {
+        background: linear-gradient(
+          109.5deg,
+          rgb(13, 11, 136) 9.4%,
+          rgb(86, 255, 248) 78.4%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: black;
+        font-size: 60px;
+        background-color: blue;
+        opacity: 0.8;
+      }
+      h2 {
+        text-align: center;
+        color: black;
+        font-size: 50px;
+        background-color: blue;
+        opacity: 0.8;
+      }
+      p {
+        font-size: 20px;
+        text-align: center;
+      }
+      .themeButton {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: skyblue;
+        color: black;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+      }
+      .themeButton:hover {
+        background-color: plum;
+        cursor: pointer;
+      }
+      .container {
+        margin: 70px 70px 70px 70px;
+        background-color: #f5f0fe;
+        padding: 20px;
+        border-radius: 30px;
+      }
+      a {
+        text-align: center;
+        text-decoration: none;
+        margin: 0 auto;
+        display: block;
+        font-size: 20px;
+      }
+      footer {
+        text-align: center;
+        font-size: 30px;
+      }
+      .I1 {
+        border-radius: 30px;
+        transition: all 300ms ease-in-out;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+      }
+      .I1:hover {
+        filter: contrast(80%);
+        transform: scale(1.5);
+      }
+      img {
+        transition: all 300ms ease-in-out;
+        border-radius: 50%;
+        border: green solid 5px;
+      }
+      img:hover {
+        filter: contrast(80%);
+        transform: scale(1.5);
+        cursor: pointer;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 20px 0;
+      }
+      .grid img:hover {
+        transform: scale(1.5);
+      }
+
+      .dark {
+        background: linear-gradient(
+          circle at 24.1% 68.8%,
+          rgb(50, 50, 50) 0%,
+          rgb(0, 0, 0) 99.4%
+        );
+        color: white;
+      }
+      .dark a {
+        color: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="themeButton">Change Theme</button>
+
+    <div class="container">
+      <h1>What is Snooker</h1>
+      <h2>My favorite type of Shots</h2>
+      <hr />
+
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXrid9KY1WXAxFjpP6pLV22yc1CO0eKuzdEA&s"
+        width="600px"
+        class="I1"
+      />
+      <hr />
+
+      <div class="grid">
+        <img
+          src="https://dubaisnooker.ae/wp-content/uploads/2023/02/billiard-concept-1-scaled.jpg"
+          class="I2"
+          width="300px"
+        />
+
+        <img
+          src="https://thecueshop.com.au/cdn/shop/articles/snooker-setup.jpg?v=1653436391"
+          class="I3"
+          width="300px"
+        />
+
+        <img
+          src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2023-04/Snooker%20table%20GettyImages-835002860.jpg?itok=eRfp6Iiq"
+          class="I4"
+          width="300px"
+        />
+
+        <img
+          src="https://t4.ftcdn.net/jpg/01/70/47/93/360_F_170479344_s00eEB8gbocokMVOq1cW9BnWORTV34yl.jpg"
+          class="I5"
+          width="300px"
+        />
+      </div>
+      <p>
+        The Art and Science of Snooker: A Detailed Exploration Introduction
+        Snooker, a cue sport that combines precision, strategy, and mental
+        acuity, has captivated audiences worldwide for over a century.
+        Originating in the latter half of the 19th century, snooker has evolved
+        from a leisurely pastime to a highly competitive and professional sport.
+        This essay delves into the history, rules, skills required, and cultural
+        significance of snooker, illustrating why it holds a unique place in the
+        world of sports. Historical Background Snooker traces its origins to
+        India, where British Army officers modified the existing billiards games
+        in the 1870s.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Snooker"
+        >Known more about Snooker</a
+      >
+    </div>
+
+    <footer>
+      <em>
+        Coded with ❤ by
+        <strong> Soumya Singh </strong>
+      </em>
+    </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+
+      let themeButton = document.querySelector(".themeButton");
+
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>

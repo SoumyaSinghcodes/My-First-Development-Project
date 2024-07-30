@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snooker Info</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: blueviolet;
+        background-color: pink;
+      }
+
+      h2 {
+        text-align: center;
+        color: blueviolet;
+        background-color: pink;
+      }
+
+      div {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        padding: 2px;
+        background-color: pink;
+      }
+
+      img {
+        margin: 0 auto;
+        display: block;
+        padding: 2px;
+        background-color: green;
+      }
+
+      a {
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        margin: 0 auto;
+      }
+
+      button {
+        text-align: center;
+        color: white;
+        background-color: pink;
+        padding: 5px;
+        margin: 50px auto;
+        border-color: blue;
+        border-radius: 20px;
+        display: block;
+        cursor: pointer;
+      }
+
+      span {
+        text-align: center;
+        color: black;
+        background-color: pink;
+      }
+
+      body {
+        background-color: #f5f0fe;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Green Baize Of Snooker and Billiards</h1>
+
+    <br />
+
+    <h2>What is Snooker</h2>
+
+    <br />
+
+    <div>
+      <p>
+        Snooker is a game involving balls on a large table. The players use long
+        sticks called cues to hit a white ball, and score points by knocking
+        coloured balls into the pockets at the sides of the table
+      </p>
+    </div>
+
+    <br />
+
+    <hr />
+
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmsMo529j3TlNmRblwDqhpH5eYTZwRTKwvQw&s"
+      width="500px"
+    />
+
+    <br />
+    <hr />
+    <br />
+    <a href="https://en.wikipedia.org/wiki/Snooker">For more information</a>
+    <br />
+
+    <button>Click_Me</button>
+
+    <span>
+      <p>
+        <em> Coded by </em>
+        <strong> Soumya Singh </strong>
+      </p>
+    </span>
+
+    <script>
+      function username() {
+        let name = prompt("Enter your name here:");
+        let age = prompt("Enter your age here:");
+
+        let heading = document.querySelector("h1");
+
+        if (age >= 18) {
+          heading.innerHTML = "Hi " + name + " you are above 18!";
+        } else {
+          heading.innerHTML = "Hi " + name + " you are below 18!";
+        }
+      }
+
+      let Click_MeButton = document.querySelector("button");
+      Click_MeButton.addEventListener("click", username);
+    </script>
+  </body>
+</html>
